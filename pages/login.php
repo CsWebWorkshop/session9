@@ -19,7 +19,7 @@
                     if ($_POST['remember'] == 'on') {
                         $time += (86400 * 2);
                     }
-                    setcookie('token', $_POST['email'].":".md5("$2y$10$9wTMSdtOhQYbxHrd71jgz.snf62xQjwEkTiHXv5sjuugpdwqK6SG"), $time);
+                    setcookie('token', $_POST['email'].":".md5("$2y$10$9wTMSdtOhQYbxHrd71jgz.snf62xQjwEkTiHXv5sjuugpdwqK6SGu"), $time);
                     header('Location: http://'.$_SERVER['HTTP_HOST'].'/dashboard');
                 } else {
                     $errors[] = 'Wrong Email or Password';
